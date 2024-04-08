@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    <style>
+        * {
+            font-size: 20px;
+            margin-bottom: 10px;
+            background-color: rgb(141, 141, 145);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container"></div>
+
+    <!-- Adicionando "Hello, World!" ao contêiner -->
+    <script type="text/javascript">
+        document.getElementById('container').innerHTML = "Hello, World!";
+    </script>
+
+    <!-- Adicionado "Hello, World!" ao contêiner usando createElement -->
+    <script>
+        var container = document.getElementById('container');
+
+        // Usando um elemento de lista com JavaScript
+        var list = document.createElement("ul");
+        var listItem = document.createElement("li");
+        listItem.textContent = "Hello, World!";
+        list.appendChild(listItem.cloneNode(true));
+        container.appendChild(list.cloneNode(true));
+    </script>
+
+    <!-- "Hello, World!" dentro de um parágrafo -->
+    <p>Hello, World!</p>
+    <style type="text/css">
+        p {
+            color:rgb(31, 78, 31);
+            font-size: x-large;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Alerta com "Hello, World!" -->
+    <script>
+        alert('Hello, World!')
+    </script>
+
+    <!-- Texto "Hello, World!" dentro de um título -->
+    <h1>Hello, World!</h1>
+
+    <!-- Alerta com "World!" quando clica no botão -->
+    <button onclick="alert('World!')">Hello</button>
+    <br><br>
+
+    <!-- Link "Hello, world!" -->
+    <a href="">Hello, world!</a>
+    <br><br>
+
+    <!-- Alerta com "Hello, World!" quando envia o formulário -->
+    <form onsubmit="alert('Hello, World!'); return false;">
+        <input type="text" value="Digite seu nome">
+        <button onclick="submitText()">Enviar</button>
+    </form>
+    
+    <!-- Função que exibe um alerta com "Hello, World!" -->
+    <script>
+    function sayHello() {
+        alert('Hello, World!');
+    }
+    </script>
+    
+    <!-- "Hello, world!" com efeito de texto sombreado -->
+    <p class="hello">Hello, world!</p>
+    <style>
+        .hello {
+            text-shadow: 0 0 5px rgb(0, 243, 53);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-color: blueviolet;
+        }
+    </style>
+</body>
+
+</html>
